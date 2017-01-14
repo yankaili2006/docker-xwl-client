@@ -12,4 +12,4 @@ NEXUS="http://101.200.176.31:8181/nexus/content/repositories/snapshots/$JAR_PATH
 
 wget $NEXUS -O $JAR
 
-nohup java -jar $JAR -a zxtd &
+java -jar $JAR -a zxtd | tee log.txt
