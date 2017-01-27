@@ -13,6 +13,7 @@ RUN echo "Asia/Shanghai" >> /etc/timezone
 
 ADD run.sh $APP_HOME/run.sh
 
+
 RUN /bin/sh -c $APP_HOME/run.sh
 
 
